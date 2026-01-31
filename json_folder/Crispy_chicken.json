@@ -1,0 +1,11 @@
+{
+  "class_name": "Crispy_chicken",
+  "label_index": 1,
+  "nutrition": {
+    "protein": 28,
+    "fiber": 1,
+    "calories": 420,
+    "carbohydrates": 20,
+    "fat": 24
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "pakode",
+  "label_index": 29,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 2,
+    "calories": 280,
+    "carbohydrates": 20,
+    "fat": 18
+  }
+}

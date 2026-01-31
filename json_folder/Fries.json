@@ -1,0 +1,11 @@
+{
+  "class_name": "Fries",
+  "label_index": 3,
+  "nutrition": {
+    "protein": 4,
+    "fiber": 3,
+    "calories": 312,
+    "carbohydrates": 41,
+    "fat": 15
+  }
+}

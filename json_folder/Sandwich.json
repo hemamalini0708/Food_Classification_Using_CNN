@@ -1,0 +1,11 @@
+{
+  "class_name": "Sandwich",
+  "label_index": 5,
+  "nutrition": {
+    "protein": 18,
+    "fiber": 3,
+    "calories": 350,
+    "carbohydrates": 35,
+    "fat": 12
+  }
+}

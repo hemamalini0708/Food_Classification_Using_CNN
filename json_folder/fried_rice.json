@@ -1,0 +1,11 @@
+{
+  "class_name": "fried_rice",
+  "label_index": 18,
+  "nutrition": {
+    "protein": 8,
+    "fiber": 2,
+    "calories": 350,
+    "carbohydrates": 55,
+    "fat": 12
+  }
+}

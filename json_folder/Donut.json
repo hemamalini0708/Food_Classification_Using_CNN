@@ -1,0 +1,11 @@
+{
+  "class_name": "Donut",
+  "label_index": 2,
+  "nutrition": {
+    "protein": 4,
+    "fiber": 1,
+    "calories": 260,
+    "carbohydrates": 30,
+    "fat": 14
+  }
+}

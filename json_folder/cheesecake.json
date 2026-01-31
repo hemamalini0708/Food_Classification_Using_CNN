@@ -1,0 +1,11 @@
+{
+  "class_name": "cheesecake",
+  "label_index": 13,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 0,
+    "calories": 350,
+    "carbohydrates": 25,
+    "fat": 26
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "kadai_paneer",
+  "label_index": 22,
+  "nutrition": {
+    "protein": 18,
+    "fiber": 3,
+    "calories": 420,
+    "carbohydrates": 12,
+    "fat": 30
+  }
+}

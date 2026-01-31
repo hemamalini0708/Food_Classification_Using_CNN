@@ -1,0 +1,11 @@
+{
+  "class_name": "Hot_Dog",
+  "label_index": 4,
+  "nutrition": {
+    "protein": 10,
+    "fiber": 1,
+    "calories": 290,
+    "carbohydrates": 20,
+    "fat": 20
+  }
+}

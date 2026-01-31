@@ -1,0 +1,11 @@
+{
+  "class_name": "kulfi",
+  "label_index": 24,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 0,
+    "calories": 230,
+    "carbohydrates": 25,
+    "fat": 12
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "masala_dosa",
+  "label_index": 25,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 3,
+    "calories": 200,
+    "carbohydrates": 30,
+    "fat": 6
+  }
+}

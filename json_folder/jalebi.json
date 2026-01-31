@@ -1,0 +1,11 @@
+{
+  "class_name": "jalebi",
+  "label_index": 21,
+  "nutrition": {
+    "protein": 1,
+    "fiber": 0,
+    "calories": 300,
+    "carbohydrates": 50,
+    "fat": 12
+  }
+}

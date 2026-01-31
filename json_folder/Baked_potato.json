@@ -1,0 +1,11 @@
+{
+  "class_name": "Baked_potato",
+  "label_index": 0,
+  "nutrition": {
+    "protein": 7,
+    "fiber": 5,
+    "calories": 260,
+    "carbohydrates": 60,
+    "fat": 1
+  }
+}

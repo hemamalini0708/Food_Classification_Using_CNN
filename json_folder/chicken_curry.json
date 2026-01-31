@@ -1,0 +1,11 @@
+{
+  "class_name": "chicken_curry",
+  "label_index": 14,
+  "nutrition": {
+    "protein": 22,
+    "fiber": 2,
+    "calories": 320,
+    "carbohydrates": 8,
+    "fat": 20
+  }
+}

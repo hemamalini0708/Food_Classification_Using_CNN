@@ -1,0 +1,11 @@
+{
+  "class_name": "burger",
+  "label_index": 9,
+  "nutrition": {
+    "protein": 25,
+    "fiber": 2,
+    "calories": 500,
+    "carbohydrates": 40,
+    "fat": 27
+  }
+}

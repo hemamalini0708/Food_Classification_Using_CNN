@@ -1,0 +1,11 @@
+{
+  "class_name": "idli",
+  "label_index": 20,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 1,
+    "calories": 130,
+    "carbohydrates": 25,
+    "fat": 1
+  }
+}

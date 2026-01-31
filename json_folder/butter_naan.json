@@ -1,0 +1,11 @@
+{
+  "class_name": "butter_naan",
+  "label_index": 10,
+  "nutrition": {
+    "protein": 8,
+    "fiber": 2,
+    "calories": 300,
+    "carbohydrates": 45,
+    "fat": 11
+  }
+}

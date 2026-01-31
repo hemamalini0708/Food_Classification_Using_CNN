@@ -1,0 +1,11 @@
+{
+  "class_name": "momos",
+  "label_index": 26,
+  "nutrition": {
+    "protein": 10,
+    "fiber": 2,
+    "calories": 220,
+    "carbohydrates": 28,
+    "fat": 8
+  }
+}

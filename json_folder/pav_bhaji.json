@@ -1,0 +1,11 @@
+{
+  "class_name": "pav_bhaji",
+  "label_index": 30,
+  "nutrition": {
+    "protein": 9,
+    "fiber": 5,
+    "calories": 350,
+    "carbohydrates": 50,
+    "fat": 10
+  }
+}

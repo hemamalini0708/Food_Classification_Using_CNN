@@ -1,0 +1,11 @@
+{
+  "class_name": "apple_pie",
+  "label_index": 8,
+  "nutrition": {
+    "protein": 2,
+    "fiber": 2,
+    "calories": 320,
+    "carbohydrates": 45,
+    "fat": 15
+  }
+}

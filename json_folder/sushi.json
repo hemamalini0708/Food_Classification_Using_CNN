@@ -1,0 +1,11 @@
+{
+  "class_name": "sushi",
+  "label_index": 33,
+  "nutrition": {
+    "protein": 9,
+    "fiber": 1,
+    "calories": 200,
+    "carbohydrates": 28,
+    "fat": 6
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "Taquito",
+  "label_index": 7,
+  "nutrition": {
+    "protein": 10,
+    "fiber": 2,
+    "calories": 220,
+    "carbohydrates": 18,
+    "fat": 11
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "paani_puri",
+  "label_index": 28,
+  "nutrition": {
+    "protein": 4,
+    "fiber": 2,
+    "calories": 80,
+    "carbohydrates": 12,
+    "fat": 3
+  }
+}

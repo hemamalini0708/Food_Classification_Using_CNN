@@ -1,0 +1,11 @@
+{
+  "class_name": "kathi_rolls",
+  "label_index": 23,
+  "nutrition": {
+    "protein": 20,
+    "fiber": 3,
+    "calories": 420,
+    "carbohydrates": 40,
+    "fat": 18
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "class_name": "pizza",
+  "label_index": 31,
+  "nutrition": {
+    "protein": 12,
+    "fiber": 2,
+    "calories": 285,
+    "carbohydrates": 36,
+    "fat": 10
+  }
+}

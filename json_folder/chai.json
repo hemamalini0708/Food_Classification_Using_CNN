@@ -1,0 +1,11 @@
+{
+  "class_name": "chai",
+  "label_index": 11,
+  "nutrition": {
+    "protein": 2,
+    "fiber": 0,
+    "calories": 120,
+    "carbohydrates": 15,
+    "fat": 5
+  }
+}

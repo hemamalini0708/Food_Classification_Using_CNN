@@ -1,0 +1,11 @@
+{
+  "class_name": "ice_cream",
+  "label_index": 19,
+  "nutrition": {
+    "protein": 4,
+    "fiber": 0,
+    "calories": 207,
+    "carbohydrates": 24,
+    "fat": 11
+  }
+}

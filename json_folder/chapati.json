@@ -1,0 +1,11 @@
+{
+  "class_name": "chapati",
+  "label_index": 12,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 3,
+    "calories": 120,
+    "carbohydrates": 20,
+    "fat": 3
+  }
+}

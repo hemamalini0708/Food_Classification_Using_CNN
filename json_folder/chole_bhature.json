@@ -1,0 +1,11 @@
+{
+  "class_name": "chole_bhature",
+  "label_index": 15,
+  "nutrition": {
+    "protein": 15,
+    "fiber": 8,
+    "calories": 650,
+    "carbohydrates": 80,
+    "fat": 30
+  }
+}

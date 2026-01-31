@@ -1,0 +1,11 @@
+{
+  "class_name": "dhokla",
+  "label_index": 17,
+  "nutrition": {
+    "protein": 6,
+    "fiber": 2,
+    "calories": 120,
+    "carbohydrates": 18,
+    "fat": 4
+  }
+}

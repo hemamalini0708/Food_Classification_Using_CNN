@@ -1,0 +1,11 @@
+{
+  "class_name": "samosa",
+  "label_index": 32,
+  "nutrition": {
+    "protein": 5,
+    "fiber": 2,
+    "calories": 260,
+    "carbohydrates": 30,
+    "fat": 14
+  }
+}
