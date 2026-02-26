@@ -1,204 +1,265 @@
-# Food Classification Using CNN (34 Classes)
+#  Food Classification Using CNN (34 Classes)
 
-This project is a complete deep learning pipeline for food image classification across 34 food categories.
-It includes:
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?logo=tensorflow)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-black?logo=flask)
+![Keras](https://img.shields.io/badge/Keras-CNN-red?logo=keras)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- Dataset balancing and preprocessing
-- Training **three models** (Custom CNN, VGG16, ResNet)
-- Model evaluation with detailed metrics
-- A **Flask web app** for image-based predictions
-- A **JSON file** with nutritional information for each food class
+An end-to-end Deep Learning system for multi-class food image classification across **34 food categories**, implemented using CNN and transfer learning architectures, and deployed using a Flask web application.
 
-#  Project Objective
-Build and deploy a deep learning-based system that can:
+---
 
-1. Classify an input food image into one of **34 classes**.
-2. Let the user choose which model to use: **Custom CNN**, **VGG16**, or **ResNet**.
-3. Display:
-     - The predicted class
-     - Model evaluation metrics (Accuracy, TP, TN, FP, FN, Precision, Recall, F1-Score)
-     - Nutritional information (protein, fiber, calories, carbs, fat) for the predicted class.
+##  Project Overview
 
-# Dataset
-- **Total Classes:** 34
-- **Images per Class (after balancing)**: 200
-- **Total Images Used**: 34 × 200 = 6,800
-- **Dataset Source**: Food Image Classification Dataset
-  - (Replace this with your actual link, e.g. Kaggle / Google Drive / etc.)
-     
-# Preprocessing Steps
-1. **Balancing the Dataset**
-   - From the original dataset, **200 images per class** were selected.
-   - This helps avoid class imbalance and gives each class equal representation.
-     
-2. **Image Transformations (Typical)**
-   - Resizing images (e.g., 224×224 or 256×256 depending on the model).
-   - Normalization (scaling pixel values).
-   - Data augmentation (optional, e.g., rotation, flip, zoom) to improve generalization.
-     
-3. **Storage**
-   - Model training and experimentation were performed on Kaggle (GPU)..
-     
-# Model Development
-Three different models were implemented and trained for comparison:
+This project implements a complete deep learning pipeline that:
 
-1. **Custom Deep Learning Model (Custom CNN)**
-2.**VGG16 (Transfer Learning)**
-3. **ResNet (Transfer Learning)**
-All models were trained using **object-oriented Python classes**, with **exception handling** for robustness.
+- Performs multi-class image classification (34 classes)
+- Compares three different model architectures
+- Generates detailed evaluation reports
+- Deploys a real-time prediction web interface
+- Integrates nutritional information using a structured JSON dataset
 
-# Common Training Setup
-- **Epochs**: 50 (for each model)
-- **Loss Function**: (e.g., Categorical Crossentropy for multi-class classification)
-- **Optimizer**: (e.g., Adam / SGD – specify what you used)
-- **Batch Size**: (fill in your value)
-- **Framework**: TensorFlow / Keras / PyTorch (mention what you actually used)
-  
-Each model generates a validation report containing:
+The system demonstrates production-ready ML workflow from data preprocessing to deployment.
 
-- Accuracy
-- True Positives (TP)
-- True Negatives (TN)
-- False Positives (FP)
-- False Negatives (FN)
-- Precision
-- Recall
-- F1-Score
-  
-The reports are saved as:
+---
 
-- ```Custom_Model.txt```
-- ```VGG16_Model.txt```
-- ```ResNet_Model.txt```
+##  Objective
 
-# 1. Custom Deep Learning Model
-This is a CNN model built from scratch without using pretrained weights.  
+To design and deploy a scalable food image classification system that:
 
-# Key Points
-- Built using multiple convolutional, pooling, and dense layers.
-- Suitable as a baseline model for comparison with transfer learning models.
-- Trained for 30 epochs.
-- The final trained model is saved (e.g., ```custom_model.h5``` or similar).
-  
-# Output
-- Training & validation accuracy/loss.
-- Saved evaluation metrics in ```Custom_Model.txt```.
-  
-# 2. VGG16 Model (Transfer Learning)
-This model uses VGG16 pretrained on ImageNet as a feature extractor.
+1. Classifies uploaded images into one of 34 food categories  
+2. Allows dynamic selection between:
+   - Custom CNN  
+   - VGG16 (Transfer Learning)  
+   - ResNet (Transfer Learning)  
+3. Displays:
+   - Predicted class
+   - Confidence score
+   - Evaluation metrics
+   - Nutritional details for the predicted food item  
 
-# Key Points
-- Base VGG16 layers are usually **frozen initially**.
-- A custom classifier head (Dense layers) is added on top for 34-class classification.
-- Trained for **50 epochs**.
-- The final trained model is saved (e.g., ```vgg16_model.h5```).
-  
-# Output
-- Performance metrics saved in ```VGG16_Model.txt```.
-- Typically achieves better accuracy than the custom CNN due to transfer learning.
-  
-# 3. ResNet Model (Transfer Learning)
-This model uses ResNet (e.g., ResNet50, ResNet101) pre-trained on **ImageNet**.
+---
 
-# Key Points
-- Uses residual connections to train very deep networks effectively.
-- A custom classifier is added on top for 34 classes.
-- Trained for **50 epochs**.
-- The final trained model is saved (e.g., ```resnet_model.h5```).
-  
-# output
-- Performance metrics saved in ```ResNet_Model.txt```.
-- Often provides strong results and generalization.
-  
-#  Evaluation Metrics
-For each model, the following metrics are computed on the validation/test set:
+##  Dataset
 
-- **Accuracy**: Overall correctness of predictions.
-- **TP (True Positives)**: Correctly predicted positive samples.
-- **TN (True Negatives)**: Correctly predicted negative samples.
-- **FP (False Positives)**: Incorrectly predicted positives.
-- **FN (False Negatives)**: Missed positives.
-- **Precision**: TP / (TP + FP)
-- **Recall**: TP / (TP + FN)
-- **F1-Score**: Harmonic mean of precision and recall.
+- **Total Classes:** 34  
+- **Balanced Images per Class:** 200  
+- **Total Images Used:** 6,800  
+- **Training Platform:** Kaggle (GPU)  
 
-All of these are summarized in text files:
-- ```Custom_Model.txt```
-- ```VGG16_Model.txt```
-- ```ResNet_Model.txt```
-  
-You can open these files to compare which model performs best.
-**Exammple**:- 
+The dataset was manually balanced to ensure equal representation across all classes and prevent model bias.
 
-<img width="400" height="200" alt="Screenshot 2026-01-31 103814" src="https://github.com/user-attachments/assets/9fda08b5-2b01-4c76-9115-0e1038b0d8be" />
+The dataset is not included in this repository due to GitHub file size limitations.
 
-#  Nutritional Information (JSON File)
-Each of the 34 food classes has associated nutritional data.
+Dataset size exceeds 100MB limit.
 
-For every class, the JSON file stores:
+Download Dataset: Kaggle Dataset Link: https://www.kaggle.com/datasets/hemamalini33/food-classification-34-classes
 
-- **Protein**
-- **Fiber**
-- **Calories**
-- **Carbohydrates**
-- **Fat**
+After downloading, place the dataset inside:
+```
+static/food34_200_per_class/ 
+                           ├── train/
+                           ├── val/
+                           └── test/
+```
+---
 
-## Tech Stack
-- Python, TensorFlow/Keras
-- Flask
-- OpenCV, NumPy
-- HTML, CSS, JavaScript
+##  Data Preprocessing
 
-## Project Structure
-Food_Classification_Using_CNN/
-├── app.py
+### 1️. Dataset Balancing
+- Selected 200 images per class  
+- Eliminated class imbalance issues  
 
-├── templates/
+### 2️. Image Processing
+- Resized images to 224×224  
+- Normalized pixel values  
+- Applied optional data augmentation:
+  - Rotation  
+  - Horizontal flip  
+  - Zoom  
 
-├── json_folder/
+### 3️. Training Architecture
+- Object-oriented implementation  
+- Modular model training classes  
+- Exception handling for robustness  
 
-├── notebooks/
+---
 
-├── data_augmentation/
+##  Model Architectures
 
-├── models/
+###  1. Custom CNN (Baseline)
+- Built from scratch
+- Multiple Conv → Pool → Dense layers
+- Trained for 30 epochs
+- Saved as `custom_model.h5`
 
-├── requirements.txt
+---
 
-└── README.md
+###  2. VGG16 (Transfer Learning)
+- Pretrained on ImageNet
+- Feature extractor layers frozen initially
+- Custom classifier head added
+- Trained for 50 epochs
+- Saved as `vgg16_model.h5`
 
-## How to Run
+---
+
+###  3. ResNet (Transfer Learning)
+- Pretrained on ImageNet
+- Residual architecture for deeper learning
+- Custom classifier head added
+- Trained for 50 epochs
+- Saved as `resnet_model.h5`
+
+---
+
+##  Model Evaluation
+
+Each model was evaluated using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- Confusion Matrix  
+- TP / TN / FP / FN  
+
+Evaluation reports are saved as:
+
+```
+Custom_Model.txt
+VGG16_Model.txt
+ResNet_Model.txt
+```
+
+
+These reports allow structured performance comparison across architectures.
+
+---
+
+##  Nutritional Information Integration
+
+A JSON file stores nutritional information for each of the 34 food categories:
+
+- Protein  
+- Fiber  
+- Calories  
+- Carbohydrates  
+- Fat  
+
+The Flask application dynamically retrieves and displays this data after prediction.
+
+---
+
+##  Deployment (Flask Web Application)
+
+The trained models are deployed through a Flask-based web interface.
+
+### Features:
+- Image upload functionality  
+- Model selection dropdown  
+- Real-time prediction  
+- Confidence score display  
+- Nutritional information output  
+
+---
+
+##  Run Locally
 
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
-
-Open browser:
-
+**Open in browser:**
 ```
 http://localhost:5000
 ```
 
-## Features
-- Image upload and prediction
-- Multiple model comparison
-- Confidence score display
-- Clean web interface
+**Tech Stack**
 
-## Training Details
+- Python
+- TensorFlow / Keras
+- Flask
+- NumPy
+- OpenCV
+- HTML / CSS / JavaScript
+
+**Project Structure**
+
+```
+Food_Classification_Using_CNN/
+│
+├── app.py
+├── requirements.txt
+│
+├── Data_Augmentation/
+│   ├── data_augmentation.log
+│   └── data_augmentation.pkl
+│
+├── json_folder/
+│   ├── apple_pie.json
+│   ├── burger.json
+│   ├── butter_naan.json
+│   └── ... (34 food class JSON files)
+│
+├── Logging_files/
+│   ├── custom_cnn_training.log
+│   ├── json_creation.log
+│   ├── resnet_training.log
+│   └── vgg16_training.log
+│
+├── models/
+│   ├── custom_cnn_food_model.h5
+│   ├── ResNet_Model.h5
+│   ├── vgg16_food_model.h5
+│   └── json_all_food_classes.pkl
+│
+├── notebooks/
+│   └── all-model-training.ipynb
+│
+├── Reports/
+│   ├── Custom_CNN_Model_Report.txt
+│   ├── ResNet_Model.txt
+│   └── VGG16_Model.txt
+│
+├── static/ (Dataset folder - not included in repo)
+│   └── food34_200_per_class/
+│       ├── train/
+│       │   └── [34 food class folders]
+│       ├── val/
+│       │   └── [34 food class folders]
+│       └── test/
+│           └── [34 food class folders]
+│
+└── templates/
+    └── index.html
+```
+**Training Configuration**
+
 - Epochs: 50
-- Image size: 224×224
-- Validation split: 10%
-- Platform: Kaggle (GPU)
+- Image Size: 224×224
+- Validation Split: 10%
+- GPU Used: Kaggle
 
-## Future Work
-- Increase food classes
-- Mobile application
-- Calorie estimation
+**Future Improvements**
 
-## Note
-- Trained model files (.h5 / .pkl) are not included due to size limitations.
+- Add more food categories
+- Mobile app integration
+- Real-time calorie estimation
+- Deploy to cloud platform
 
-## Author
-**Hema Malini**
+**Note**
+Trained model files (.h5) are excluded due to GitHub size limitations.
+
+**Author**
+
+Hema Malini Gangumalla
+
+Aspiring Data Scientist
+
+📧 hemamalinig07@gmail.com
+
+**License**
+
+MIT License
