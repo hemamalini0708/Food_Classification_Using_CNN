@@ -203,13 +203,7 @@ Food_Classification_Using_CNN/
 │   ├── butter_naan.json
 │   └── ... (34 food class JSON files)
 │
-├── Logging_files/
-│   ├── custom_cnn_training.log
-│   ├── json_creation.log
-│   ├── resnet_training.log
-│   └── vgg16_training.log
-│
-├── models/
+├── models/ (models files - not included in repository due to GitHub file size limitations)
 │   ├── custom_cnn_food_model.h5
 │   ├── ResNet_Model.h5
 │   ├── vgg16_food_model.h5
@@ -223,7 +217,7 @@ Food_Classification_Using_CNN/
 │   ├── ResNet_Model.txt
 │   └── VGG16_Model.txt
 │
-├── static/ (Dataset folder - not included in repo)
+├── static/ (Dataset folder - not included in repository due to GitHub file size limitations)
 │   └── food34_200_per_class/
 │       ├── train/
 │       │   └── [34 food class folders]
