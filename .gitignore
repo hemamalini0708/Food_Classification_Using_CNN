@@ -6,3 +6,10 @@ venv/
 *.pkl
 *.h5
 .ipynb_checkpoints/
+
+Data_Agumentation/
+Logging_files/
+static/
+models/*.h5
+models/*.pkl
+json_all_food_classes.pkl
