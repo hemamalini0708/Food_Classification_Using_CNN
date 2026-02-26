@@ -1,0 +1,62 @@
+============================================================
+CUSTOM CNN MODEL - VALIDATION REPORT
+============================================================
+Generated on: 2025-10-17 20:54:01.622635
+Model: Custom CNN (Built from Scratch)
+Dataset: Food34 (200 per class)
+
+OVERALL METRICS:
+------------------------------
+Accuracy:  0.7223
+Precision: 0.7295
+Recall:    0.7223
+F1-Score:  0.7174
+
+PER-CLASS METRICS:
+------------------------------
+Class                TP     TN     FP     FN    
+------------------------------------------------------------
+Baked_potato         33     1308   14     17    
+Crispy_chicken       31     1297   25     19    
+Donut                31     1309   13     19    
+Fries                34     1315   6      17    
+Hot_Dog              31     1315   7      19    
+Sandwich             37     1299   23     13    
+Taco                 23     1316   6      27    
+Taquito              27     1303   19     23    
+apple_pie            37     1303   19     13    
+burger               28     1331   11     2     
+butter_naan          19     1339   1      13    
+chai                 37     1304   28     3     
+chapati              34     1323   10     5     
+cheesecake           36     1312   10     14    
+chicken_curry        24     1307   15     26    
+chole_bhature        41     1317   7      7     
+dal_makhani          31     1325   14     2     
+dhokla               23     1341   6      2     
+fried_rice           30     1327   10     5     
+ice_cream            29     1298   24     21    
+idli                 27     1331   11     3     
+jalebi               26     1341   2      3     
+kadai_paneer         32     1333   6      1     
+kathi_rolls          23     1342   2      5     
+kulfi                16     1342   9      5     
+masala_dosa          22     1334   11     5     
+momos                29     1333   7      3     
+omlette              18     1308   14     32    
+paani_puri           12     1345   5      10    
+pakode               34     1322   7      9     
+pav_bhaji            36     1319   7      10    
+pizza                35     1319   12     6     
+samosa               27     1326   9      10    
+sushi                38     1311   11     12    
+
+CONFUSION MATRIX:
+------------------------------
+[[33  7  0 ...  0  0  1]
+ [ 7 31  1 ...  1  0  0]
+ [ 0  1 31 ...  1  0  1]
+ ...
+ [ 0  3  0 ... 35  0  0]
+ [ 0  0  1 ...  0 27  0]
+ [ 0  0  0 ...  0  0 38]]

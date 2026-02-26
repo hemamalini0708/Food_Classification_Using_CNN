@@ -1,0 +1,75 @@
+
+VGG16 MODEL - COMPREHENSIVE VALIDATION REPORT
+============================================================
+Generated: 2025-10-22 05:06:52.292040
+
+DATASET INFORMATION:
+- Training samples: 1372
+- Number of classes: 34
+- Class names: ['Baked_potato', 'Crispy_chicken', 'Donut', 'Fries', 'Hot_Dog', 'Sandwich', 'Taco', 'Taquito', 'apple_pie', 'burger', 'butter_naan', 'chai', 'chapati', 'cheesecake', 'chicken_curry', 'chole_bhature', 'dal_makhani', 'dhokla', 'fried_rice', 'ice_cream', 'idli', 'jalebi', 'kadai_paneer', 'kathi_rolls', 'kulfi', 'masala_dosa', 'momos', 'omlette', 'paani_puri', 'pakode', 'pav_bhaji', 'pizza', 'samosa', 'sushi']
+
+OVERALL METRICS:
+----------------------------------------
+Accuracy:  0.7332 (73.32%)
+Precision: 0.7434 (74.34%)
+Recall:    0.7332 (73.32%)
+F1-Score:  0.7265 (72.65%)
+
+CONFUSION MATRIX SUMMARY:
+----------------------------------------
+Total True Positives (TP):  1006
+Total True Negatives (TN):  44910
+Total False Positives (FP): 366
+Total False Negatives (FN): 366
+
+DETAILED PER-CLASS METRICS:
+----------------------------------------
+Class                TP       TN       FP       FN       Precision  Recall     F1-Score  
+------------------------------------------------------------------------------------------
+Baked_potato         35       1311     11       15       0.7609     0.7000      0.7292
+Crispy_chicken       29       1306     16       21       0.6444     0.5800      0.6105
+Donut                31       1317     5        19       0.8611     0.6200      0.7209
+Fries                46       1307     14       5        0.7667     0.9020      0.8288
+Hot_Dog              40       1320     2        10       0.9524     0.8000      0.8696
+Sandwich             34       1317     5        16       0.8718     0.6800      0.7640
+Taco                 25       1310     12       25       0.6757     0.5000      0.5747
+Taquito              20       1316     6        30       0.7692     0.4000      0.5263
+apple_pie            23       1304     18       27       0.5610     0.4600      0.5055
+burger               30       1340     2        0        0.9375     1.0000      0.9677
+butter_naan          28       1336     4        4        0.8750     0.8750      0.8750
+chai                 38       1326     6        2        0.8636     0.9500      0.9048
+chapati              34       1328     5        5        0.8718     0.8718      0.8718
+cheesecake           38       1304     18       12       0.6786     0.7600      0.7170
+chicken_curry        37       1281     41       13       0.4744     0.7400      0.5781
+chole_bhature        42       1310     14       6        0.7500     0.8750      0.8077
+dal_makhani          33       1320     19       0        0.6346     1.0000      0.7765
+dhokla               24       1339     8        1        0.7500     0.9600      0.8421
+fried_rice           32       1329     8        3        0.8000     0.9143      0.8533
+ice_cream            33       1311     11       17       0.7500     0.6600      0.7021
+idli                 28       1337     5        2        0.8485     0.9333      0.8889
+jalebi               28       1339     4        1        0.8750     0.9655      0.9180
+kadai_paneer         29       1330     9        4        0.7632     0.8788      0.8169
+kathi_rolls          21       1337     7        7        0.7500     0.7500      0.7500
+kulfi                20       1345     6        1        0.7692     0.9524      0.8511
+masala_dosa          24       1333     12       3        0.6667     0.8889      0.7619
+momos                29       1328     12       3        0.7073     0.9062      0.7945
+omlette              24       1300     22       26       0.5217     0.4800      0.5000
+paani_puri           14       1343     7        8        0.6667     0.6364      0.6512
+pakode               38       1304     25       5        0.6032     0.8837      0.7170
+pav_bhaji            29       1317     9        17       0.7632     0.6304      0.6905
+pizza                29       1326     5        12       0.8529     0.7073      0.7733
+samosa               22       1323     12       15       0.6471     0.5946      0.6197
+sushi                19       1316     6        31       0.7600     0.3800      0.5067
+
+PERFORMANCE ASSESSMENT:
+----------------------------------------
+70%+ Accuracy!
+
+MODEL TRAINING INFORMATION:
+----------------------------------------
+- Pre-trained model: VGG16 with ImageNet weights
+- Total epochs: 50
+- Batch size: 32
+- Image size: (224, 224)
+- Number of classes: 34
+- Model saved: /kaggle/working/vgg16_food_model.h5
