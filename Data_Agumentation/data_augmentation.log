@@ -1,0 +1,95 @@
+2025-10-17 18:33:16,471 - INFO - Data Augmentation Logging setup successfully for Kaggle!
+2025-10-17 18:33:16,471 - INFO - DataAugmentationPipeline initialized
+2025-10-17 18:33:16,472 - INFO - Starting Data Augmentation Pipeline on Kaggle...
+2025-10-17 18:33:16,473 - INFO - DataCopier initialized
+2025-10-17 18:33:16,474 - INFO - Copying dataset from input to working directory...
+2025-10-17 18:33:34,526 - INFO - ✓ Dataset copied successfully to working directory
+2025-10-17 18:33:34,527 - INFO - DataAnalyzer initialized
+2025-10-17 18:33:34,527 - INFO - Analyzing dataset structure...
+2025-10-17 18:33:34,538 - INFO - === DATASET ANALYSIS RESULTS ===
+2025-10-17 18:33:34,538 - INFO - Total classes found: 34
+2025-10-17 18:33:34,539 - INFO - 
+TRAINING SET (class: count):
+2025-10-17 18:33:34,539 - INFO -   Baked_potato: 255 images
+2025-10-17 18:33:34,540 - INFO -   Crispy_chicken: 255 images
+2025-10-17 18:33:34,541 - INFO -   Donut: 254 images
+2025-10-17 18:33:34,541 - INFO -   Fries: 255 images
+2025-10-17 18:33:34,542 - INFO -   Hot_Dog: 255 images
+2025-10-17 18:33:34,542 - INFO -   Sandwich: 250 images
+2025-10-17 18:33:34,543 - INFO -   Taco: 251 images
+2025-10-17 18:33:34,544 - INFO -   Taquito: 253 images
+2025-10-17 18:33:34,545 - INFO -   apple_pie: 255 images
+2025-10-17 18:33:34,545 - INFO -   burger: 255 images
+2025-10-17 18:33:34,547 - INFO -   butter_naan: 255 images
+2025-10-17 18:33:34,547 - INFO -   chai: 255 images
+2025-10-17 18:33:34,548 - INFO -   chapati: 252 images
+2025-10-17 18:33:34,549 - INFO -   cheesecake: 250 images
+2025-10-17 18:33:34,549 - INFO -   chicken_curry: 254 images
+2025-10-17 18:33:34,550 - INFO -   chole_bhature: 258 images
+2025-10-17 18:33:34,551 - INFO -   dal_makhani: 236 images
+2025-10-17 18:33:34,551 - INFO -   dhokla: 196 images
+2025-10-17 18:33:34,553 - INFO -   fried_rice: 250 images
+2025-10-17 18:33:34,554 - INFO -   ice_cream: 250 images
+2025-10-17 18:33:34,555 - INFO -   idli: 242 images
+2025-10-17 18:33:34,555 - INFO -   jalebi: 230 images
+2025-10-17 18:33:34,556 - INFO -   kadai_paneer: 254 images
+2025-10-17 18:33:34,557 - INFO -   kathi_rolls: 223 images
+2025-10-17 18:33:34,557 - INFO -   kulfi: 171 images
+2025-10-17 18:33:34,559 - INFO -   masala_dosa: 218 images
+2025-10-17 18:33:34,560 - INFO -   momos: 250 images
+2025-10-17 18:33:34,560 - INFO -   omlette: 255 images
+2025-10-17 18:33:34,561 - INFO -   paani_puri: 100 images
+2025-10-17 18:33:34,561 - INFO -   pakode: 188 images
+2025-10-17 18:33:34,562 - INFO -   pav_bhaji: 214 images
+2025-10-17 18:33:34,562 - INFO -   pizza: 192 images
+2025-10-17 18:33:34,563 - INFO -   samosa: 170 images
+2025-10-17 18:33:34,564 - INFO -   sushi: 255 images
+2025-10-17 18:33:34,564 - INFO - 
+Classes needing augmentation: 6
+2025-10-17 18:33:34,565 - INFO -   dhokla: 196 -> needs 4 more images
+2025-10-17 18:33:34,565 - INFO -   kulfi: 171 -> needs 29 more images
+2025-10-17 18:33:34,566 - INFO -   paani_puri: 100 -> needs 100 more images
+2025-10-17 18:33:34,567 - INFO -   pakode: 188 -> needs 12 more images
+2025-10-17 18:33:34,567 - INFO -   pizza: 192 -> needs 8 more images
+2025-10-17 18:33:34,568 - INFO -   samosa: 170 -> needs 30 more images
+2025-10-17 18:33:34,569 - INFO - DataAugmentor initialized
+2025-10-17 18:33:34,569 - INFO - Starting data augmentation process...
+2025-10-17 18:33:34,573 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/dhokla: need 4 new images
+2025-10-17 18:33:34,657 - INFO - Completed /kaggle/working/food34_200_per_class/train/dhokla: created 4 new images
+2025-10-17 18:33:34,658 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/kulfi: need 29 new images
+2025-10-17 18:33:35,367 - INFO -   Created 20/29 for kulfi
+2025-10-17 18:33:35,643 - INFO - Completed /kaggle/working/food34_200_per_class/train/kulfi: created 29 new images
+2025-10-17 18:33:35,645 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/paani_puri: need 100 new images
+2025-10-17 18:33:35,973 - INFO -   Created 20/100 for paani_puri
+2025-10-17 18:33:36,946 - INFO -   Created 40/100 for paani_puri
+2025-10-17 18:33:38,199 - INFO -   Created 60/100 for paani_puri
+2025-10-17 18:33:39,221 - INFO -   Created 80/100 for paani_puri
+2025-10-17 18:33:39,817 - INFO -   Created 100/100 for paani_puri
+2025-10-17 18:33:39,818 - INFO - Completed /kaggle/working/food34_200_per_class/train/paani_puri: created 100 new images
+2025-10-17 18:33:39,819 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/pakode: need 12 new images
+2025-10-17 18:33:40,052 - INFO - Completed /kaggle/working/food34_200_per_class/train/pakode: created 12 new images
+2025-10-17 18:33:40,053 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/pizza: need 8 new images
+2025-10-17 18:33:40,263 - INFO - Completed /kaggle/working/food34_200_per_class/train/pizza: created 8 new images
+2025-10-17 18:33:40,264 - INFO - Augmenting /kaggle/working/food34_200_per_class/train/samosa: need 30 new images
+2025-10-17 18:33:40,756 - INFO -   Created 20/30 for samosa
+2025-10-17 18:33:40,910 - INFO - Completed /kaggle/working/food34_200_per_class/train/samosa: created 30 new images
+2025-10-17 18:33:40,911 - INFO - Augmentation report saved to: /kaggle/working/data_augmentation.pkl
+2025-10-17 18:33:40,911 - INFO - DataVerifier initialized
+2025-10-17 18:33:40,913 - INFO - Starting augmentation verification...
+2025-10-17 18:33:40,919 - INFO - === AUGMENTATION VERIFICATION RESULTS ===
+2025-10-17 18:33:40,920 - INFO - ✓ augmentation_pickle: Augmentation pickle verified: 6 classes
+2025-10-17 18:33:40,920 - INFO - ✓ image_counts: All classes have at least 200 images
+2025-10-17 18:33:40,921 - INFO - 
+================================================================================
+2025-10-17 18:33:40,922 - INFO - DATA AUGMENTATION PIPELINE - FINAL REPORT
+2025-10-17 18:33:40,923 - INFO - ================================================================================
+2025-10-17 18:33:40,923 - INFO - AUGMENTATION SUMMARY:
+2025-10-17 18:33:40,924 - INFO -   Classes augmented: 6
+2025-10-17 18:33:40,925 - INFO -   Total images created: 183
+2025-10-17 18:33:40,925 - INFO -   Successful augmentations: 6/6
+2025-10-17 18:33:40,926 - INFO - VERIFICATION SUMMARY:
+2025-10-17 18:33:40,927 - INFO -   augmentation_pickle: PASS - Augmentation pickle verified: 6 classes
+2025-10-17 18:33:40,927 - INFO -   image_counts: PASS - All classes have at least 200 images
+2025-10-17 18:33:40,929 - INFO - OVERALL STATUS: COMPLETED SUCCESSFULLY
+2025-10-17 18:33:40,929 - INFO - ================================================================================
+2025-10-17 18:33:40,930 - INFO - Data Augmentation Pipeline completed successfully!
