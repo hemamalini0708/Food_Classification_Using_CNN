@@ -161,7 +161,8 @@ The trained models are deployed through a Flask-based web interface.
 - Model selection dropdown  
 - Real-time prediction  
 - Confidence score display  
-- Nutritional information output  
+- Nutritional information output
+- The web application allows users to select and run any of the three trained models (Custom CNN, VGG16, or ResNet50) to perform food image classification and view the predicted class along with nutritional information.  
 
 ---
 
